@@ -62,7 +62,7 @@ public class NearbyResAdapter extends BaseAdapter<NearbyRestaurantModel.Restaura
 
     @Override
     protected int itemId() {
-        return R.layout.my_order_item;
+        return R.layout.restaurant_item;
     }
 
     @NonNull

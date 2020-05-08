@@ -189,18 +189,15 @@ public class MainActivity extends BaseActivity implements HasSupportFragmentInje
                         case 3:
                             openFragment(RestaurantFragment.newInstance(), RES);
                             //   openFragment(new ComapnyMainFragment(), 1);
-                            //   showNewOrderDialog();
                             break;
 
                         case 2:
                             openFragment(StoreFragment.newInstance(), STORE);
                             //   openFragment(NotifyFragment.newInstance(), 2);
-                            //    showDeliveredDone();
                             break;
                         case 1:
                             openFragment(TroodFragment.newInstance(), TROOD);
                             //  openFragment(new CompanyOrderFragment(), 5);
-                            //showCongratulations();
                             break;
                         case 0:
                             openFragment(ProfileFragment.newInstance(), 8);

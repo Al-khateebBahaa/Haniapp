@@ -21,16 +21,18 @@
         <activity android:name=".activity.orders.MyOrders" />
         <activity android:name=".activity.orders.DeliverdTime" />
         <activity android:name=".activity.auth.VerficationPhoneCode" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.MainActivity"/>
+
+
+        <activity
+            android:name=".activity.auth.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.auth.SplashActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/FullscreenTheme" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
