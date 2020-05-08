@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activity.settingPages.EditProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_color">
+        
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"/>
+        
+    </android.support.design.widget.AppBarLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/image"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="اللإسم"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/person"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:textColor="@color/textClolor"
+            android:paddingEnd="8dp"
+            android:id="@+id/editName"
+            android:paddingStart="8dp"
+            android:inputType="text"
+            android:background="@drawable/edit_background"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="البريد الإلكتروني"
+            android:textSize="14sp"
+            android:drawableStart="@mipmap/envolpe"
+            android:drawablePadding="8dp"
+            android:textColor="@color/textClolor"
+            android:paddingEnd="8dp"
+            android:id="@+id/editEmail"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:paddingStart="8dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_background"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="رقم الجوال"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/mobile"
+            android:textSize="14sp"
+            android:textColor="@color/textClolor"
+            android:paddingEnd="8dp"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:id="@+id/editPhoneCard"
+            android:paddingStart="8dp"
+            android:inputType="phone"
+            android:textAlignment="viewStart"
+            android:background="@drawable/edit_background"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="تأكيد"
+                android:background="@drawable/veiw_all_button"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:id="@+id/sendBut"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

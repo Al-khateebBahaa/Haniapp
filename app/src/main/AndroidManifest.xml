@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ahmedMustafa.Hani">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.orders.MyOrders" />
+        <activity android:name=".activity.orders.DeliverdTime" />
+        <activity android:name=".activity.auth.VerficationPhoneCode" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.auth.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".activity.auth.LoginActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".activity.orders.RestaurantDetailsActivity" />
+        <activity android:name=".activity.orders.NewOrderActivity" />
+        <activity android:name=".activity.auth.SendPhoneNumberActivity" />
+        <activity android:name=".activity.auth.SelectLocationActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.settingPages.MyResActivity" />
+        <activity android:name=".activity.settingPages.EditProfileActivity" />
+        <activity android:name=".activity.settingPages.PlociyActivity" />
+        <activity android:name=".activity.settingPages.HowWorkActivity" />
+        <activity android:name=".activity.settingPages.TermsActivity" />
+        <activity android:name=".activity.settingPages.AboutAppActivity" />
+        <activity android:name=".activity.orders.RequestOrderConnectionActivity" />
+        <activity android:name=".activity.auth.VerficationActivity" />
+        <activity android:name=".activity.orders.DelivaryRequestActivity" />
+        <activity android:name=".activity.auth.RegisterActivity" />
+        <activity android:name=".activity.AllResActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.orders.ChatActivity" >
+        </activity>
+        <activity android:name=".activity.CommentsActivity" />
+        <activity android:name=".activity.BankTransferActivity" />
+        <activity android:name=".activity.orders.ChangeBillActivity" />
+
+        <service android:name=".notification.FM_Service">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notification.FI_IDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notification.Token_Service"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.auth.EntroActivity" />
+        <activity android:name=".activity.trood.TroodDetailsActivity" />
+        <activity android:name=".activity.trood.MakeTroodOrderActivity" />
+        <activity android:name=".activity.trood.RequestAgentActivity" />
+    </application>
+
+</manifest>

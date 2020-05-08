@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activity.auth.VerficationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_color">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بيانات المندوب"
+                android:textColor="@color/textClolor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الإسم كاملا"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_background"
+                android:hint="أدخل إسمك كاملا"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/textClolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="رقم الهوية الوطنية / هوية المقيم"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_background"
+                android:hint="أدخل رقم الهوية الوطنية"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/textClolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="الجنسية"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editNational"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_background"
+                android:hint="الجنسية"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/textClolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="رقم الهاتف"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editPhoneCard"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_background"
+                android:hint="أدخل رقم الهاتف"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:scrollbars="horizontal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textClolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="البريد الإلكتروني"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_background"
+                android:hint="أدخل البريد الإلكتروني"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/textClolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="25dp"
+                android:text="ما هي الوثائق المطلوبه ؟ "
+                android:textColor="@color/textClolor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صورة من بطاقة الهوية الوطينة / هوية المقيم"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/idImage"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="صورة من رخصة القيادة"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/idCarImage"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="صورة للسياره من الأمام"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/frontCarImage"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="صورة للسياره من الخلف"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/endCarImage"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:id="@+id/sendBut"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/veiw_all_button"
+                android:text="إرسال"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

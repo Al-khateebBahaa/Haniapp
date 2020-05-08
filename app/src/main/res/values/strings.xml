@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Hani</string>
+    <string name="facebook_app_id">230914251104452</string>
+    <string name="fb_login_protocol_scheme">fb230914251104452</string>
+    <string name="clientID">81152753269-duo1biv6p6t3kratddr7ifb5v63cr2f5.apps.googleusercontent.com</string>
+    <string name="clientSecret">nI4yF4zFQeveqjq9jRZLcNb5</string>
+    <string name="emptyField">حقل مطلوب</string>
+    <string name="inValidEmail">بريد إلكتروني غير صالح</string>
+    <string name="invalidPhone">هاتف جوال غير صالح</string>
+    <string name="noMatchPassword">كلمة المرور غير متطايقة</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wallet">رصيد الحساب</string>
+    <string name="delivry">إجمالي رسوم التوصيل</string>
+    <string name="orderCount">عدد الطلبات</string>
+    <string name="userRate">تقييم المستخدم</string>
+    <string name="twitterContact">ابق علي تواصل عبر تويتر</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="res_nearby">متاجر قريبه مني</string>
+    <string name="viewAll">عرض الكل</string>
+    <string name="res_active">متاجر نشطه</string>
+    <string name="res">متاجر</string>
+    <string name="profile">أنا</string>
+    <string name="title_activity_restaurant">Map</string>
+    <string name="order_now">إطلب الأن</string>
+    <string name="noNetwork">تأكد من الإتصال بالإنترنت وأعد المحاوله</string>
+    <string name="error_msg">خطأ ، برجاء المحاولة في وقت لاحق</string>
+    <string name="title_activity_select_location">Map</string>
+    <string name="myOrder">طلباتي</string>
+    <string name="notify">التنبيهات</string>
+    <string name="today">اليوم</string>
+    <string name="yasterDay">أمس</string>
+    <string name="action_search">search</string>
+    <string name="verification_message">"ادخل 4 أرقام التي ستصلك على الجوال "</string>
+
+    <array name="month">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>إبريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>ستمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </array>
+</resources>

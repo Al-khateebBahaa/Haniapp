@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/main_color</color>
+    <color name="colorPrimaryDark">@color/main_color</color>
+    <color name="colorAccent">@color/main_color</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#fff</color>
+    <color name="textClolor">@color/secondary_color</color>
+    <color name="but_background">#08437b</color>
+    <color name="cardBackground">#ddd</color>
+    <color name="black">#000</color>
+    <color name="toolbar">#095696</color>
+    <color name="hint">#ddd</color>
+    <color name="orang">@color/main_color</color>
+    <color name="red">#fd462d</color>
+    <color name="main_color">#810B84</color>
+    <color name="background_color">#707070</color>
+    <color name="secondary_color">#F73350</color>
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_image"
+    android:layoutDirection="rtl"
+    tools:context=".activity.trood.MakeTroodOrderActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabs_title"
+                android:gravity="top|center"
+                android:minHeight="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الطرود"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_notification" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_new_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="شركة زاجل للاستيراد والتصدير"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    android:text="هذا النص هو وصف لهذه الشركة"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/listDivider"
+                    android:foreground="@color/background_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#FDFBFB"
+                    android:drawableEnd="@mipmap/star"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="التقيمات"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/button3"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FDFBFB"
+                    android:drawableEnd="@drawable/ic_location"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="عنوان الشركة"
+                    app:layout_constraintEnd_toStartOf="@+id/button2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/button2" />
+
+                <Button
+                    android:id="@+id/sendBut"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/buttons_shape"
+                    android:text="عمل طلب"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/placeView"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?android:selectableItemBackground"-->
+    <!--                android:foreground="?android:selectableItemBackground"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:paddingBottom="8dp"-->
+    <!--                android:paddingEnd="8dp"-->
+    <!--                android:paddingStart="8dp"-->
+    <!--                android:paddingTop="8dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:drawablePadding="8dp"-->
+    <!--                    android:drawableStart="@drawable/ic_back_"-->
+    <!--                    android:gravity="end"-->
+    <!--                    android:text="إختر موقعك الحالي"-->
+    <!--                    android:textColor="@color/textClolor"-->
+    <!--                    android:textSize="14sp" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/placeText"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:layout_marginStart="8dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:drawableEnd="@mipmap/directions"-->
+    <!--                    android:drawablePadding="8dp"-->
+    <!--                    android:gravity="end"-->
+    <!--                    android:text="مكاني "-->
+    <!--                    android:textColor="@color/textClolor"-->
+    <!--                    android:textSize="12sp" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="1dp"-->
+    <!--                android:background="#ddd" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:id="@+id/timeView"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?android:selectableItemBackground"-->
+    <!--                android:foreground="?android:selectableItemBackground"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:paddingBottom="8dp"-->
+    <!--                android:paddingEnd="8dp"-->
+    <!--                android:paddingStart="8dp"-->
+    <!--                android:paddingTop="8dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:drawablePadding="8dp"-->
+    <!--                    android:drawableStart="@drawable/ic_back_"-->
+    <!--                    android:text="إختر موقع التوصيل"-->
+    <!--                    android:textColor="@color/textClolor"-->
+    <!--                    android:textSize="14sp" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/timeText"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:drawableEnd="@mipmap/directions"-->
+    <!--                    android:drawablePadding="8dp"-->
+    <!--                    android:gravity="end"-->
+    <!--                    android:text="مكان التوصيل"-->
+    <!--                    android:textColor="@color/textClolor"-->
+    <!--                    android:textSize="14sp" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="1dp"-->
+    <!--                android:background="#ddd" />-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/editText"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="8dp"-->
+    <!--                android:layout_marginTop="8dp"-->
+    <!--                android:hint="تفاصيل الطلب"-->
+    <!--                android:textColor="@color/textClolor"-->
+    <!--                android:textSize="14sp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </RelativeLayout>-->
+    <!--    -->
+
+</android.support.constraint.ConstraintLayout>

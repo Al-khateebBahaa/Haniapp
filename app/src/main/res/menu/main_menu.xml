@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@mipmap/person"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/myOrder"
+        android:icon="@drawable/ic_delivery"
+        android:title="@string/myOrder" />
+
+
+    <item
+        android:id="@+id/trood"
+        android:title="الطرود"
+        android:icon="@drawable/ic_shop"/>
+
+  <!--  <item
+        android:id="@+id/store"
+        android:title="@string/res"
+        android:icon="@mipmap/shop"/> -->
+
+    <item
+        android:id="@+id/res"
+        android:title="مطاعم"
+        android:icon="@drawable/ic_restorance"/>
+
+
+
+
+
+</menu>
